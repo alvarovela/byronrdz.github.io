@@ -2,10 +2,24 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="estilos.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
+		<script>
+			$(function () {
+				$(".especial").addClass("prueba");
+				$("#boton-pruebas").click(function () {
+					$(".especial").slideToggle();
+					console.log("Clicked");
+				});
+			});
+		</script>
+
 		<h3>Pagina de test</h3>
 
 		<p class="especial">Parrafo con estilo</p>
+		<p class="especial2">Otro parrafo con estilo</p>
+
+		<button id="boton-pruebas">Pruebas</button>
 	</body>
 </html>
